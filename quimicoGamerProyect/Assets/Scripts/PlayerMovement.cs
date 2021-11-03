@@ -5,28 +5,22 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed;
-    private float finalSpeed = 0;
-    private Vector3 vectorMovement;
+    public float rotationSpeed;
 
-    //public Rigidbody rb;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        vectorMovement = Vector3.zero;
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        finalSpeed = Time.deltaTime * speed;
-        vectorMovement.x = finalSpeed * Input.GetAxis("Horizontal");
-        vectorMovement.z = finalSpeed * Input.GetAxis("Vertical");
-        this.transform.Translate(vectorMovement);
-        //transform.Translate(vectorMovement);
-        // transform.position += vectorMovement; 
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
-        //con rb
-        //rb.MovePosition(transform-position + vectorMovimiento);
+        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        movementDirection.Normalize();
+
+        transform.Translate(movementDirection * speed * Time.deltaTime, Space.World);
+
+        if (movementDirection != Vector3.zero)
+        {
+            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        }
     }
 }
