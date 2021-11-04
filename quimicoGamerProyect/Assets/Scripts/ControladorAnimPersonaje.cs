@@ -18,22 +18,8 @@ public class ControladorAnimPersonaje : MonoBehaviour
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        //if (horizontalInput != 0)
-        //{
-        //    if (horizontalInput < 0)
-        //    {
-        //        horizontalInput = (horizontalInput) * (-1);
-        //    }
-            animatorPersonaje.SetFloat("JoystickAxis", horizontalInput);
-        //}
-        //if (verticalInput != 0)
-        //{
-        //    if (verticalInput < 0)
-        //    {
-        //        verticalInput = (verticalInput) * (-1);
-        //    }
-            animatorPersonaje.SetFloat("JoystickAxis2", verticalInput);
-        //}
+        animatorPersonaje.SetFloat("JoystickAxis", horizontalInput);
+        animatorPersonaje.SetFloat("JoystickAxis2", verticalInput);
         animatorPersonaje.SetLayerWeight(1, Input.GetAxis("Jump"));
 
         //if (Input.GetAxis("Jump") > 0)
