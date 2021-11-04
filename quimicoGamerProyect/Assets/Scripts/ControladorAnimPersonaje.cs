@@ -20,6 +20,7 @@ public class ControladorAnimPersonaje : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         animatorPersonaje.SetFloat("JoystickAxis", horizontalInput);
         animatorPersonaje.SetFloat("JoystickAxis2", verticalInput);
+
         animatorPersonaje.SetLayerWeight(1, Input.GetAxis("Jump"));
 
         //if (Input.GetAxis("Jump") > 0)
