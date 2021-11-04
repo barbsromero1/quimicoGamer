@@ -18,4 +18,9 @@ public class ZombieReturn : MonoBehaviour
             objectPooler.ReturnZoombie(this.gameObject);
     }
 
+    private void OnCollisionEnter(Collision col)
+    {
+        if (col.transform.CompareTag("Player")) OnDisable();
+    }
+
 }

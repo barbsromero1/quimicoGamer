@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 1395441961653996924}
   - component: {fileID: 1710060093646979455}
   - component: {fileID: -555374919788303864}
+  - component: {fileID: 174174762127942365}
   m_Layer: 0
   m_Name: TT_demo_zombie
   m_TagString: Untagged
@@ -181,6 +182,20 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &174174762127942365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856601670117699726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3521eb815560f4c917325a141df4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: -555374919788303864}
+  playerPoint: {fileID: 0}
 --- !u!1 &856601670117699840
 GameObject:
   m_ObjectHideFlags: 0
