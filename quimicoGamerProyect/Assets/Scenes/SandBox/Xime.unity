@@ -221,6 +221,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100166, guid: eb062aa776e44954d94c4c2f76ebc148, type: 3}
   m_PrefabInstance: {fileID: 1611357116}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &552569255 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: eb062aa776e44954d94c4c2f76ebc148, type: 3}
+  m_PrefabInstance: {fileID: 1611357116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &552569257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,6 +240,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   rotationSpeed: 720
+--- !u!114 &552569258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552569254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 933acc1d8ba6ac3488b30f8bf2fa4018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorPersonaje: {fileID: 552569255}
+  PlayerSpeed: 5
 --- !u!1 &581403530
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,6 +580,10 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: d3206bdce9c92db48990b16e6c010aba, type: 2}
     - target: {fileID: 9500000, guid: eb062aa776e44954d94c4c2f76ebc148, type: 3}
       propertyPath: m_UpdateMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: eb062aa776e44954d94c4c2f76ebc148, type: 3}
+      propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
