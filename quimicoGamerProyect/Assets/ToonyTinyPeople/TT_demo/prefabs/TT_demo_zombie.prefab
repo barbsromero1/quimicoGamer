@@ -161,6 +161,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98e4258800b11a14f92c5bed900aa677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectPooler: {fileID: 356912728198449519, guid: 8152c1299d7efae48bafef08c70be855, type: 3}
+  zombieAnimator: {fileID: 856601670124978856}
 --- !u!195 &-555374919788303864
 NavMeshAgent:
   m_ObjectHideFlags: 0
