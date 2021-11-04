@@ -212,7 +212,6 @@ GameObject:
   - component: {fileID: 7478225697115775088}
   - component: {fileID: -7686965664942357627}
   - component: {fileID: 9013709324313629913}
-  - component: {fileID: 2674794949841645945}
   - component: {fileID: 8622775289009594027}
   - component: {fileID: -5117744284133914}
   m_Layer: 0
@@ -250,7 +249,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -270,19 +269,6 @@ MonoBehaviour:
   fuenteAudio: {fileID: 1637830678259999433, guid: ace3a85f6aed99249b85c25402a79248, type: 3}
   sonidoPasos: {fileID: 8300000, guid: 37cdbcb02c3324849ac457dfc5b1058e, type: 3}
   PlayerSpeed: 5
---- !u!65 &2674794949841645945
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7478225697116208144}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.2, y: 0.1, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8622775289009594027
 MonoBehaviour:
   m_ObjectHideFlags: 0
