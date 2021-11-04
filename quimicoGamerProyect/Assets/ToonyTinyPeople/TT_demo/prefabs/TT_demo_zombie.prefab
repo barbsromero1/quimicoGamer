@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 1710060093646979455}
   - component: {fileID: -555374919788303864}
   - component: {fileID: 174174762127942365}
+  - component: {fileID: 6457726971998050776}
   m_Layer: 0
   m_Name: TT_demo_zombie
   m_TagString: Untagged
@@ -109,7 +110,7 @@ Animator:
   m_GameObject: {fileID: 856601670117699726}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: f88c8301226fd194cbbc64e25b20d567, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 31c2b018a2e25d749bf87199a9326cff, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -195,7 +196,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: -555374919788303864}
-  playerPoint: {fileID: 0}
+--- !u!114 &6457726971998050776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856601670117699726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7c8dee9da0ea4db049e073607c3ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorPersonaje: {fileID: 856601670124978856}
+  fuenteAudio: {fileID: 1637830678259999433, guid: ace3a85f6aed99249b85c25402a79248, type: 3}
+  sonidoPasos: {fileID: 8300000, guid: e331a9e83f5b77e49bd9efba1b2c2fd9, type: 3}
+  PlayerSpeed: 5
 --- !u!1 &856601670117699840
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class ZombieReturn : MonoBehaviour
 {
-    private ObjectPooler objectPooler;
+    public ObjectPooler objectPooler;
+    public Animator zombieAnimator; 
 
     // Start is called before the first frame update
     void Start()
     {
-        objectPooler = FindObjectOfType<ObjectPooler>();
+        //objectPooler = FindObjectOfType<ObjectPooler>();
     }
 
     private void OnDisable()
@@ -20,7 +21,11 @@ public class ZombieReturn : MonoBehaviour
 
     private void OnCollisionEnter(Collision col)
     {
-        if (col.transform.CompareTag("Player")) OnDisable();
+        if (col.transform.CompareTag("Player"))
+        {
+            //zombieAnimator.SetBool("die", false);
+            OnDisable();
+        }
     }
 
 }
