@@ -780,6 +780,10 @@ PrefabInstance:
       propertyPath: objectPooler
       value: 
       objectReference: {fileID: 1139947930}
+    - target: {fileID: 1710060093646979455, guid: b14953694d54eea4eb66f453e525024c, type: 3}
+      propertyPath: zombieAnimator
+      value: 
+      objectReference: {fileID: 1261679757}
     - target: {fileID: 6457726971998050776, guid: b14953694d54eea4eb66f453e525024c, type: 3}
       propertyPath: fuenteAudio
       value: 
@@ -1952,6 +1956,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1261679757 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c, type: 3}
+  m_PrefabInstance: {fileID: 391374542}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1359109434
 GameObject:
   m_ObjectHideFlags: 0
