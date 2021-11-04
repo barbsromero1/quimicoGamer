@@ -253,6 +253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorPersonaje: {fileID: 552569255}
+  fuenteAudio: {fileID: 1192767901}
+  sonidoPasos: {fileID: 8300000, guid: b993df4a93c1d304ab19d8b2eb88c9a5, type: 3}
   PlayerSpeed: 5
 --- !u!1 &581403530
 GameObject:

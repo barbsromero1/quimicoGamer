@@ -5,10 +5,8 @@ using UnityEngine;
 public class ControladorAnimPersonaje : MonoBehaviour
 {
     public Animator animatorPersonaje;
-
-    //public AudioSource fuenteAudio;
-    //public AudioClip sonidoPasos;
-
+    public AudioSource fuenteAudio;
+    public AudioClip sonidoPasos;
     public float PlayerSpeed = 5;
     // Start is called before the first frame update
     void Start()
@@ -18,7 +16,6 @@ public class ControladorAnimPersonaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
         if (horizontalInput != 0)
@@ -46,7 +43,7 @@ public class ControladorAnimPersonaje : MonoBehaviour
 
     public void Pisada()
     {
-        Debug.Log("ok");
-        //fuenteAudio.PlayOneShot(sonidoPasos);
+        Debug.Log("piso");
+        fuenteAudio.PlayOneShot(sonidoPasos);
     }
 }
