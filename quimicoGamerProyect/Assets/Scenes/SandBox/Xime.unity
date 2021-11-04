@@ -590,6 +590,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb062aa776e44954d94c4c2f76ebc148, type: 3}
+--- !u!1 &1889185195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 856601670117699726, guid: b14953694d54eea4eb66f453e525024c, type: 3}
+  m_PrefabInstance: {fileID: 2084145317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1889185196 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 856601670124978856, guid: b14953694d54eea4eb66f453e525024c, type: 3}
+  m_PrefabInstance: {fileID: 2084145317}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1889185197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1889185195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b7c8dee9da0ea4db049e073607c3ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animatorPersonaje: {fileID: 1889185196}
+  fuenteAudio: {fileID: 1192767901}
+  sonidoPasos: {fileID: 8300000, guid: 5c9bdbce37b06a24fa6ea793bcfd1907, type: 3}
+  PlayerSpeed: 5
 --- !u!1 &1992660028
 GameObject:
   m_ObjectHideFlags: 0
