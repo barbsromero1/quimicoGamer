@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
 {
     public float timeValue = 300;
     public Text timeText;
+    public bool textBlink = true;
 
     // Start is called before the first frame update
     void Start()
@@ -24,11 +25,13 @@ public class Timer : MonoBehaviour
             if (timeValue < 31)
             {
                 timeText.color = Color.magenta;
+                StartCoroutine("FlashText");
             }
         }
         else
         {
             //game over
+            StopAllCoroutines();
             timeValue += 300;
         }
 
@@ -44,5 +47,15 @@ public class Timer : MonoBehaviour
         float minutes = Mathf.FloorToInt(timeDisplay / 60);
         float seconds = Mathf.FloorToInt(timeDisplay % 60);
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+    }
+    public IEnumerator FlashText()
+    {
+        while (textBlink)
+        {
+            timeText.enabled = false;
+            yield return new WaitForSeconds(.5f);
+            timeText.enabled = true;
+            yield return new WaitForSeconds(.5f);
+        }
     }
 }
