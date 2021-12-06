@@ -1891,6 +1891,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8622775289009594027, guid: 6fb37f825ee63264b9c2600bf1a52006, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1359109437}
     - target: {fileID: 9013709324313629913, guid: 6fb37f825ee63264b9c2600bf1a52006, type: 3}
       propertyPath: fuenteAudio
       value: 
@@ -2444,7 +2448,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 126
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &1668457878
 GameObject:
