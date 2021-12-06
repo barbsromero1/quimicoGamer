@@ -12,7 +12,7 @@ public class ZombieAI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerPoint = ZombieManager.instance.player.transform; 
+        playerPoint = PlayerManager.instance.player.transform; 
     }
 
     // Update is called once per frame

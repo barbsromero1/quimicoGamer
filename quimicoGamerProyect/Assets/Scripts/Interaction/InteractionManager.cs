@@ -10,7 +10,6 @@ public class InteractionManager : MonoBehaviour
     //detects when the object is on range 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("IsTriggered "); 
         interactiveObject = other.GetComponent<InteractiveObject>();
         if (interactiveObject != null)
         {
@@ -22,7 +21,6 @@ public class InteractionManager : MonoBehaviour
     //detects when player has gone out of range 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("ExitTrigger ");
         interactiveObject.PlayerOutOfRange();
         interactiveObject = null;
     }

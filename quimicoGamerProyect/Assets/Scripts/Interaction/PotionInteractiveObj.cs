@@ -8,7 +8,7 @@ public class PotionInteractiveObj : InteractiveObject
 
     public override void PlayerInRange()
     {
-        playerLifeSystem.lives = 100;
+        playerLifeSystem.lives = 200;
         this.gameObject.SetActive(false); 
         Debug.Log("ENTRO Segundo Tipo de Acción  " + this.name);
     }
