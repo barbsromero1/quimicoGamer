@@ -9,10 +9,7 @@ public class InteractiveObject : MonoBehaviour
     //acction when on radio trigger area 
     public virtual void PlayerInRange()
     {
-        Debug.Log("IN Ranggeeeeeeee"); 
-        Debug.Log("El jugador entro " + this.name);
-        //in here we can call other scripts,
-        //create a swtich to programe the action
+        this.gameObject.SetActive(false);
     }
 
     public virtual void PlayerOutOfRange()

@@ -12,9 +12,4 @@ public class PotionInteractiveObj : InteractiveObject
         this.gameObject.SetActive(false); 
         Debug.Log("ENTRO Segundo Tipo de Acción  " + this.name);
     }
-
-    public override void PlayerOutOfRange()
-    {
-        Debug.Log("SALIO Segundo Tipo de Acción  " + this.name);
-    }
 }

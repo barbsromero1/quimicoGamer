@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/SandBox/CineMashineMovementTry.unity
+    guid: c094a97c9fb742d48a03ccddd3ebf9db
   m_configObjects: {}

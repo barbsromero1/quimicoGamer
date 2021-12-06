@@ -30,7 +30,6 @@ public class PlayerLivfeSystem : MonoBehaviour
     public void AddLife(int add)
     {
         lives += add;
-        Debug.Log("AddLife " + lives);
         //UIManager.Instance.UpdateLivesUI(_lives);
     }
 
@@ -38,12 +37,11 @@ public class PlayerLivfeSystem : MonoBehaviour
     public void RemoveLife(int substract)
     {
         lives -= substract;
-        Debug.Log("RemovalLife " + lives);
         //UIManager.Instance.UpdateLivesUI(_lives);
-
-        if (lives == 0)
+        if (lives <= 0)
         {
-            Debug.Log("Game Over"); 
+            FindObjectOfType<GameOver>().EndGame();
+            Debug.Log("Game Over");
         }
     }
 }

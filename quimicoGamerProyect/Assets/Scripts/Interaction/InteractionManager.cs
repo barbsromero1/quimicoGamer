@@ -14,6 +14,7 @@ public class InteractionManager : MonoBehaviour
         interactiveObject = other.GetComponent<InteractiveObject>();
         if (interactiveObject != null)
         {
+            Debug.Log("interactive NOT FOUND"); 
             interactiveObject.PlayerInRange();
         }
     }
@@ -26,17 +27,4 @@ public class InteractionManager : MonoBehaviour
         interactiveObject = null;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        //makes sure the player is in range to call function 
-        //if (interactiveObject != null)
-        //{
-        //    if (Input.GetKeyDown(KeyCode.H))
-        //    {
-        //        interactiveObject.PlayerInRange();
-        //    }
-        //}
-
-    }
 }
