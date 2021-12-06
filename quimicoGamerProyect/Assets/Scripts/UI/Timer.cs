@@ -6,14 +6,14 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
-    public float timeValue;
+    public float timeValue = 300;
     public Text timeText;
     public bool textBlink = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        timeValue = 300;
     }
 
     // Update is called once per frame

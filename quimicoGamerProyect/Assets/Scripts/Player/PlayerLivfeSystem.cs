@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class PlayerLivfeSystem : MonoBehaviour
 {
-    public int lives;
+    public int lives = 200;
     public int add;
     public int substract;
     public Animator playerAnimator;
     //make initialize lives 
     void Start()
     {
-        lives = 100;
+        lives = 200;
     }
 
     private void Update()
