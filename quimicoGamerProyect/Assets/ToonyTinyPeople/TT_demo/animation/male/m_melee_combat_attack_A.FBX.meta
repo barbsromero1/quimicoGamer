@@ -197,7 +197,7 @@ ModelImporter:
       - time: 0.25522545
         functionName: hit
         data: 
-        objectReferenceParameter: {instanceID: 0}
+        objectReferenceParameter: {fileID: 11500000, guid: e36609e789bf6da44af934d9f5b0c56c, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0

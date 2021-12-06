@@ -6,9 +6,11 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public float rotationSpeed;
+    public GameObject bat;
 
     void Update()
     {
+        bat.SetActive(false);
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
