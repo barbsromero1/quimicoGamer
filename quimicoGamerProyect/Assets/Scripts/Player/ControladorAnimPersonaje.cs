@@ -29,11 +29,11 @@ public class ControladorAnimPersonaje : MonoBehaviour
         //    animatorPersonaje.SetTrigger("attack");
         //}
         
-}
+    }
 
     public void Pisada()
     {
-        Debug.Log("piso");
+        //Debug.Log("piso");
         fuenteAudio.PlayOneShot(sonidoPasos);
     }
 }
