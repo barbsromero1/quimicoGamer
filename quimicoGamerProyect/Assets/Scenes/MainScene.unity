@@ -47440,7 +47440,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 19.29, y: 0}
-  m_SizeDelta: {x: 222.53, y: 48.3383}
+  m_SizeDelta: {x: 222, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991116608
 MonoBehaviour:
@@ -59923,6 +59923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeValue: 35
   timeText: {fileID: 1314994147}
+  textBlink: 1
 --- !u!1001 &1316019625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66940,6 +66941,7 @@ GameObject:
   - component: {fileID: 1457173978}
   - component: {fileID: 1457173980}
   - component: {fileID: 1457173979}
+  - component: {fileID: 1457173981}
   m_Layer: 5
   m_Name: bar_weapon
   m_TagString: Untagged
@@ -66964,7 +66966,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 21.5, y: 0}
-  m_SizeDelta: {x: 222.53, y: 48.3383}
+  m_SizeDelta: {x: 222, y: 48}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457173979
 MonoBehaviour:
@@ -67001,6 +67003,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457173977}
   m_CullTransparentMesh: 1
+--- !u!114 &1457173981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457173977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36609e789bf6da44af934d9f5b0c56c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1457764872
 PrefabInstance:
   m_ObjectHideFlags: 0
