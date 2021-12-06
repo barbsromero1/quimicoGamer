@@ -25,13 +25,14 @@ public class Timer : MonoBehaviour
             if (timeValue < 31)
             {
                 timeText.color = Color.magenta;
+                if (timeValue == 0)
+                {
+                    FindObjectOfType<GameOver>().EndGame();
+                    Debug.Log("Game Over");
+                }
             }
         }
-        if (timeValue == 0)
-        {
-            FindObjectOfType<GameOver>().EndGame();
-            Debug.Log("Game Over"); 
-        }
+        
 
         DisplayTime(timeValue);
     }

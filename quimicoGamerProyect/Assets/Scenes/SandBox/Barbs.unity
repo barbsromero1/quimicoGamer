@@ -726,7 +726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 856601670117272814, guid: b14953694d54eea4eb66f453e525024c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.66
+      value: -8.4
       objectReference: {fileID: 0}
     - target: {fileID: 856601670117272814, guid: b14953694d54eea4eb66f453e525024c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -734,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 856601670117272814, guid: b14953694d54eea4eb66f453e525024c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.7
+      value: -8.8
       objectReference: {fileID: 0}
     - target: {fileID: 856601670117272814, guid: b14953694d54eea4eb66f453e525024c, type: 3}
       propertyPath: m_LocalRotation.w
@@ -788,6 +788,10 @@ PrefabInstance:
       propertyPath: zombieAnimator
       value: 
       objectReference: {fileID: 1261679757}
+    - target: {fileID: 2697103862067709184, guid: b14953694d54eea4eb66f453e525024c, type: 3}
+      propertyPath: lookRadius
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6457726971998050776, guid: b14953694d54eea4eb66f453e525024c, type: 3}
       propertyPath: fuenteAudio
       value: 
