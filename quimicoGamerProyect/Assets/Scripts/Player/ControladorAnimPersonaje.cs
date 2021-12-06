@@ -23,12 +23,6 @@ public class ControladorAnimPersonaje : MonoBehaviour
 
         animatorPersonaje.SetLayerWeight(1, Input.GetAxis("Jump"));
 
-        //if (Input.GetAxis("Jump") > 0)
-        //{
-        //    animatorPersonaje.SetLayerWeight(1, Input.GetAxis("Jump"));
-        //    animatorPersonaje.SetTrigger("attack");
-        //}
-        
 }
 
     public void Pisada()
