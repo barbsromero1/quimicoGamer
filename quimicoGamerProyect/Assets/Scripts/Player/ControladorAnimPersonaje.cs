@@ -8,6 +8,8 @@ public class ControladorAnimPersonaje : MonoBehaviour
     public AudioSource fuenteAudio;
     public AudioClip sonidoPasos;
     public float PlayerSpeed = 5;
+    public GameObject bat;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,15 @@ public class ControladorAnimPersonaje : MonoBehaviour
         animatorPersonaje.SetFloat("JoystickAxis2", verticalInput);
 
         animatorPersonaje.SetLayerWeight(1, Input.GetAxis("Jump"));
+        if (Input.GetKeyDown("space"))
+        {
+            print("space key was pressed");
+            bat.SetActive(true);
+        }
+        if(Input.GetKeyUp("space"))
+        {
+            bat.SetActive(false);
+        }
 
         //if (Input.GetAxis("Jump") > 0)
         //{
