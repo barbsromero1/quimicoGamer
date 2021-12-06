@@ -24,9 +24,14 @@ public class ControladorAnimPersonaje : MonoBehaviour
         animatorPersonaje.SetFloat("JoystickAxis2", verticalInput);
 
         animatorPersonaje.SetLayerWeight(1, Input.GetAxis("Jump"));
-        if (Input.GetKeyDown("Space"))
+        if (Input.GetKeyDown("space"))
         {
+            print("space key was pressed");
             bat.SetActive(true);
+        }
+        if(Input.GetKeyUp("space"))
+        {
+            bat.SetActive(false);
         }
 
     }
