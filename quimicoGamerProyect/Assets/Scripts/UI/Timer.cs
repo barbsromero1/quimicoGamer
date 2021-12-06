@@ -29,8 +29,6 @@ public class Timer : MonoBehaviour
         }
         else
         {
-            //game over
-            //timeValue += 300;
         }
 
         DisplayTime(timeValue);
