@@ -6,19 +6,19 @@ public class PlayerLivfeSystem : MonoBehaviour
 {
     public int lives;
     public int add;
-    public int substract; 
-
+    public int substract;
+    public Animator playerAnimator;
     //make initialize lives 
     void Start()
     {
-        lives = 100; 
+        lives = 100;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            AddLife(10); 
+            AddLife(10);
         }
         if (Input.GetKeyDown(KeyCode.O))
         {
@@ -36,12 +36,19 @@ public class PlayerLivfeSystem : MonoBehaviour
     //when he has to loose 
     public void RemoveLife(int substract)
     {
-        lives -= substract;
-        //UIManager.Instance.UpdateLivesUI(_lives);
-        if (lives <= 0)
+        if (lives > 0)
         {
-            FindObjectOfType<GameOver>().EndGame();
+            lives -= substract;
+            Debug.Log("menos vida");
+        }
+       else
+        {
+            playerAnimator.SetBool("die", true);
+            new WaitForSeconds(2);
+            //FindObjectOfType<GameOver>().EndGame();
             Debug.Log("Game Over");
+            return;
+
         }
     }
 }
