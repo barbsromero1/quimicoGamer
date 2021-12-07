@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: -2478596153958617017}
   - component: {fileID: 9181091617632584060}
   - component: {fileID: 3588058324476706078}
+  - component: {fileID: 5100919322105852618}
   m_Layer: 9
   m_Name: TT_demo_male_A
   m_TagString: Untagged
@@ -396,6 +397,21 @@ MonoBehaviour:
   lives: 0
   add: 0
   substract: 0
+  playerAnimator: {fileID: -5117744284133914}
+--- !u!136 &5100919322105852618
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7478225697116208144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.42
+  m_Height: 1.78
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.76, z: 0}
 --- !u!1 &7478225697116208148
 GameObject:
   m_ObjectHideFlags: 0

@@ -44,8 +44,8 @@ public class PlayerLivfeSystem : MonoBehaviour
        else
         {
             playerAnimator.SetBool("die", true);
-            new WaitForSeconds(2);
-            //FindObjectOfType<GameOver>().EndGame();
+            new WaitForSeconds(10);
+            FindObjectOfType<GameOver>().EndGame();
             Debug.Log("Game Over");
             return;
 

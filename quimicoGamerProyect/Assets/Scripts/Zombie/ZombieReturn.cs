@@ -11,7 +11,8 @@ public class ZombieReturn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //objectPooler = FindObjectOfType<ObjectPooler>();
+        objectPooler = FindObjectOfType<ObjectPooler>();
+        personaje = FindObjectOfType<PlayerLivfeSystem>();
     }
 
     private void OnDisable()
@@ -51,5 +52,24 @@ public class ZombieReturn : MonoBehaviour
             personaje.RemoveLife(1);
         }
     }
-
+    private void OnTriggerStay(Collider other)
+    {
+        Debug.Log("Triiiigerrr");
+        int cont = 0;
+        if (other.transform.CompareTag("Player"))
+        {
+            personaje.RemoveLife(1);
+        }
+        if (other.transform.CompareTag("Bat"))
+        {
+            cont++;
+            if (cont == 3)
+            {
+                zombieAnimator.SetBool("die", false);
+                Invoke("OnDisable", 1f);
+                cont = 0;
+                return;
+            }
+        }
+    }
 }
