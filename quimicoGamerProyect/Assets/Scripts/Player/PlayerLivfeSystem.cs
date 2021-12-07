@@ -42,13 +42,16 @@ public class PlayerLivfeSystem : MonoBehaviour
             Debug.Log("menos vida");
         }
        else
-        {
+       {
             playerAnimator.SetBool("die", true);
-            new WaitForSeconds(10);
-            FindObjectOfType<GameOver>().EndGame();
+            Invoke("Die", 1.5f);
             Debug.Log("Game Over");
             return;
 
-        }
+       }
+    }
+    void Die()
+    {
+        FindObjectOfType<GameOver>().EndGame();
     }
 }
